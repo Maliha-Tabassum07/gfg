@@ -1,4 +1,4 @@
-package practice.recursion;
+package practice.random;
 
 public class MajorityElementSorted {
     static boolean isMajority(int arr[], int n, int x)
