@@ -6,8 +6,8 @@ class Solution
     public static int getCount(Node head)
     {
 
-        int count=1;
-        for(Node n= head;n.next!=null;n=n.next){
+        int count=0;
+        for(Node n= head;n!=null;n=n.next){
             count++;
         }
         return count;
