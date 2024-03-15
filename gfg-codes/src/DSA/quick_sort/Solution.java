@@ -11,7 +11,6 @@ class Solution
         int leftIndex=partition(arr,low,high);
         quickSort(arr,low,leftIndex-1);
         quickSort(arr,leftIndex+1,high);
-
     }
     static int partition(int arr[], int low, int high)
     {
