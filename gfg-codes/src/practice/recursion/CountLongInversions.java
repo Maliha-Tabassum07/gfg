@@ -1,6 +1,11 @@
 package practice.recursion;
 
 public class CountLongInversions {
+    public static void main(String[] args) {
+        long arr[]= {2, 4, 1, 3, 5};
+        CountLongInversions countLongInversions=new CountLongInversions();
+        System.out.println(countLongInversions.mergeSort(0,arr.length-1,arr));
+    }
     public static long mergeSort(long low, long high, long arr[]){
         long count=0l;
         if(low>=high){
@@ -16,7 +21,7 @@ public class CountLongInversions {
         int leftPointer = (int)low;
         int rightPointer = (int)(mid + 1);
         long temp[] = new long[arr.length];
-        int i = (int)low;
+        int i = 0;
         long count=0l;
         while (leftPointer<=mid && rightPointer<=high){
             if (arr[leftPointer]<=arr[rightPointer]){
